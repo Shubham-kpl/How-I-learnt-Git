@@ -152,4 +152,71 @@ git init: to create a new git repo
 
 	1. git init
 
-	2. 
+
+To make a local file remote: 
+i.e. how to push a local file (now being added .git folder) into github
+
+	1. git remote add random #link
+		=> we want to add a new remote repo with name "random" (this name  is by default "origin"
+
+
+	2. git remote -v
+		=> to verify remote
+
+	3. git branch
+		=> to check branch
+
+	4. git branch -M main
+		=> rename the branch
+
+	5. git push origin main
+
+	6. git push -u origin main
+		=> sets upsteam
+		=> when we want to work on a project for so long that we don't want each time to write this origin main, so at once we say that "-u" and then for ever if we want to push something in the same repo "origin", we don't have to write that "origin main"
+		=> from now on we'll write only "git push"
+
+
+=======================
+
+master used to be the "Default" branch name in Github few years ago but it eventually got changed and now the name of the default branch on github is "main"
+
+
+=====================
+
+Local Git: Git Workflow
+
+github repo -> clone -> modify -> add -> commit -> push
+
+
+========================
+
+Git Branches
+
+	1. when multiple developers/ feature teams/ bug fixer teams etc. are working on a single project and each one want to perform its unique act, what proceeds is that each entity creates its separate branch and then make all changes inside it. 
+
+	2. Later some stage arrive when multiple branches are merged with the "main" branch (for example when a feature is completly made)
+
+
+a) git branch 
+	to view all the branches
+
+b) git branch -M new_name
+	to change branch name
+
+c) git checkout #branch_name
+	=> to navigate between multiple branches
+	=> from current branch to branch_name branch
+
+d) git checkout -b #new_branch_name 
+	to create and navigate to the new branch "branch_name" 
+
+e) git branch -d #branch_name
+	=> to delete a branch
+	=> we can't delete the branch in which we are currently present
+
+
+
+	Whenever we make a change in one branch, the change is limited to the branch only and the other branches are independent of this change
+
+===================
