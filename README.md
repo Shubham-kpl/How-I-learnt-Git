@@ -220,3 +220,38 @@ e) git branch -d #branch_name
 	Whenever we make a change in one branch, the change is limited to the branch only and the other branches are independent of this change
 
 ===================
+
+Merging code
+
+	Way1
+	
+	git diff #branch ( to compare commits, branches, files and more)
+	git merge #branch (merge the branches)
+
+	
+	Way2
+
+	create a PR (pull request)
+	it lets you tell others about changes you've pushed to a branch in a repo on GitHub
+
+
+
+=======================
+
+
+Pull: Remote (github) ke changes local ke andar
+
+	i.e. jo github pe change ho gya wohi local pe bhi karna chah rhe hain
+
+	git pull origin main
+
+	it fetches and downloads content from a remote repo and immediately update teh local repo to match that content
+
+
+========================
+
+Resolving merge conflicts
+
+an event that occurs when git is unable to automatically resolve differences in code between two commits
+
+========================
