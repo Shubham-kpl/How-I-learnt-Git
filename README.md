@@ -255,3 +255,26 @@ Resolving merge conflicts
 an event that occurs when git is unable to automatically resolve differences in code between two commits
 
 ========================
+
+
+Undoing changes
+
+1. Staged changes
+	for single file
+		git reset #file_name
+
+	for multiple files
+		git reset
+
+2. Committed changes
+	for one commit
+		git reset HEAD~1 
+			(head~1 => HEAD is the name given to the most recent commit, head~1 means one commit behind HEAD)
+			the changes now become unstaged
+
+	for many commits	
+		git reset #commit_hash
+		git reset --hard #commit_hash
+
+
+=====================
